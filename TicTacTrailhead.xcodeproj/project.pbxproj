@@ -57,6 +57,7 @@
 		21E59FC81A2A173100DE355B /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.png; sourceTree = "<group>"; };
 		21E59FCC1A2A182E00DE355B /* SpringAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringAnimation.swift; sourceTree = "<group>"; };
 		21E59FCE1A2A1CE600DE355B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E79ABDDF1B4DD7E700AB0C78 /* TTTBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TTTBridgingHeader.h; path = ThreeinaRow/TTTBridgingHeader.h; sourceTree = "<group>"; };
 		E7F1930B1B4C7C0500DD6F6D /* launch-sm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch-sm.png"; sourceTree = "<group>"; };
 		E7F1930D1B4C7C3D00DD6F6D /* splash-mtns.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splash-mtns.png"; sourceTree = "<group>"; };
 		E7F193131B4C8B0800DD6F6D /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
@@ -85,6 +86,7 @@
 		21E59F981A2A16DE00DE355B = {
 			isa = PBXGroup;
 			children = (
+				E79ABDDF1B4DD7E700AB0C78 /* TTTBridgingHeader.h */,
 				21E59FA31A2A16DE00DE355B /* TicTacTrailhead */,
 				21E59FB91A2A16DE00DE355B /* TicTacTrailhead */,
 				21E59FA21A2A16DE00DE355B /* Products */,
@@ -350,6 +352,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = ThreeinaRow/TTTBridgingHeader.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -385,6 +388,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = ThreeinaRow/TTTBridgingHeader.h;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -397,7 +401,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ThreeinaRow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Mav.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = gypsycode.TicTacTrailhead;
 				PRODUCT_NAME = TicTacTrailhead;
 				PROVISIONING_PROFILE = "";
 			};
@@ -411,7 +415,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ThreeinaRow/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Mav.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = gypsycode.TicTacTrailhead;
 				PRODUCT_NAME = TicTacTrailhead;
 				PROVISIONING_PROFILE = "";
 			};
