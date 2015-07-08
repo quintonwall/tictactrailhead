@@ -1,7 +1,7 @@
-Tripletz
+Tic.Tac.Trailhead.
 ========
 
-Tic Tac Toe in Swift
+Tic Tac Toe app for DF15 Developer Keynote 
 
 
-![](https://www.mav3r1ck.com/content/images/2014/11/Trip-2x.png)
+![](http://www.quintonwall.com/public/images/tictactrailhead.png)
