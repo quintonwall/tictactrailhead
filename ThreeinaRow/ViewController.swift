@@ -32,6 +32,7 @@ class ViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        PlayerTurnsLabel.font = UIFont.sdsFontLightWithSize(SDSFontSizeType.SDSFontSizeXLarge);
     }
 
     override func didReceiveMemoryWarning()
@@ -43,6 +44,8 @@ class ViewController: UIViewController
     {
         label.center = CGPointMake(label.center.x - 400, label.center.y)
         playAgainButton.alpha = 0
+        label.font = UIFont.sdsFontLightWithSize(SDSFontSizeType.SDSFontSizeXxLarge);
+
     }
     
 
@@ -56,9 +59,12 @@ class ViewController: UIViewController
             
             if goNumber % 2 == 0
             {
-                image = UIImage(named: "fire300.png")!
+                //image = UIImage(named: "fire300.png")!
+                image = UIImage.sdsIconAction(SDSIconActionType.Announcement, withSize: 50)
+                
                 
                 gameState[sender.tag] = 2
+
                 PlayerTurnsLabel.text = "It's Racoon's Turn"
             }
             else
@@ -146,6 +152,7 @@ class ViewController: UIViewController
         }
         audioPlayer.prepareToPlay()
         audioPlayer.play()
+
         PlayerTurnsLabel.text = "Get 3 in a Row to Win"
         
     }

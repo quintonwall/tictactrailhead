@@ -3,7 +3,6 @@
 import Foundation
 import UIKit
 
-
 var duration = 0.7
 var delay = 0.0
 var damping = 0.7
