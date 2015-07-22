@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05529D141B601FE600F543B7 /* First.m in Sources */ = {isa = PBXBuildFile; fileRef = 05529D131B601FE600F543B7 /* First.m */; };
-		05529D151B601FE600F543B7 /* First.m in Sources */ = {isa = PBXBuildFile; fileRef = 05529D131B601FE600F543B7 /* First.m */; };
 		216848C21A2A4AB40089D314 /* pop_drip.wav in Resources */ = {isa = PBXBuildFile; fileRef = 216848C11A2A4AB40089D314 /* pop_drip.wav */; };
 		216848C41A2A4B240089D314 /* music_marimba_chord.wav in Resources */ = {isa = PBXBuildFile; fileRef = 216848C31A2A4B240089D314 /* music_marimba_chord.wav */; };
 		216848C61A2A4F010089D314 /* AndNow.wav in Resources */ = {isa = PBXBuildFile; fileRef = 216848C51A2A4F010089D314 /* AndNow.wav */; };
@@ -44,8 +42,6 @@
 /* Begin PBXFileReference section */
 		05529D101B601FE500F543B7 /* TicTacTrailhead-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TicTacTrailhead-Bridging-Header.h"; sourceTree = "<group>"; };
 		05529D111B601FE500F543B7 /* TicTacTrailheadTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TicTacTrailheadTests-Bridging-Header.h"; sourceTree = "<group>"; };
-		05529D121B601FE600F543B7 /* First.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = First.h; sourceTree = "<group>"; };
-		05529D131B601FE600F543B7 /* First.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = First.m; sourceTree = "<group>"; };
 		216848C11A2A4AB40089D314 /* pop_drip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pop_drip.wav; sourceTree = "<group>"; };
 		216848C31A2A4B240089D314 /* music_marimba_chord.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = music_marimba_chord.wav; sourceTree = "<group>"; };
 		216848C51A2A4F010089D314 /* AndNow.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = AndNow.wav; sourceTree = "<group>"; };
@@ -146,8 +142,6 @@
 				21E59FAF1A2A16DE00DE355B /* LaunchScreen.xib */,
 				21E59FA41A2A16DE00DE355B /* Supporting Files */,
 				E7F193171B4C92B600DD6F6D /* AboutViewController.swift */,
-				05529D121B601FE600F543B7 /* First.h */,
-				05529D131B601FE600F543B7 /* First.m */,
 				05529D101B601FE500F543B7 /* TicTacTrailhead-Bridging-Header.h */,
 				05529D111B601FE500F543B7 /* TicTacTrailheadTests-Bridging-Header.h */,
 			);
@@ -338,7 +332,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				21E59FCF1A2A1CE600DE355B /* ViewController.swift in Sources */,
-				05529D141B601FE600F543B7 /* First.m in Sources */,
 				21E59FCD1A2A182E00DE355B /* SpringAnimation.swift in Sources */,
 				E7F193181B4C92B600DD6F6D /* AboutViewController.swift in Sources */,
 				21E59FA71A2A16DE00DE355B /* AppDelegate.swift in Sources */,
@@ -349,7 +342,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05529D151B601FE600F543B7 /* First.m in Sources */,
 				21E59FBD1A2A16DE00DE355B /* TicTacTrailhead.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
