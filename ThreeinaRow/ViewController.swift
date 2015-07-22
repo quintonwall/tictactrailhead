@@ -60,7 +60,7 @@ class ViewController: UIViewController
             if goNumber % 2 == 0
             {
                 //image = UIImage(named: "fire300.png")!
-                image = UIImage.sdsIconAction(SDSIconActionType.Announcement, withSize: 50)
+                image = UIImage.sdsIconAction(SDSIconActionType.FreezeUser, withSize: 50)
                 
                 
                 gameState[sender.tag] = 2
@@ -69,7 +69,8 @@ class ViewController: UIViewController
             }
             else
             {
-                image = UIImage(named: "racoon-nocircle.png")!
+//                image = UIImage(named: "racoon-nocircle.png")!
+                image = UIImage.sdsIconAction(SDSIconActionType.ShareThanks, withSize: 50)
                 gameState[sender.tag] = 1
                 PlayerTurnsLabel.text = "It's Fire's Turn"
                 
