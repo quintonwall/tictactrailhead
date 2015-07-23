@@ -47,7 +47,7 @@ class ViewController: UIViewController
         NSLog("WILL APPEAR")
         if appDelegate.sdsEnabled {
             NSLog("SDS ON!")
-            label.font = UIFont.sdsFontLightWithSize(SDSFontSizeType.SDSFontSizeXxLarge);
+            label.font = UIFont.sdsFontLightWithSize(SDSFontSizeType.SDSFontSizeXLarge);
            PlayerTurnsLabel.font = UIFont.sdsFontLightWithSize(SDSFontSizeType.SDSFontSizeXLarge);
         }
         else{
