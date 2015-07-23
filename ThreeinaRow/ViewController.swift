@@ -34,6 +34,8 @@ class ViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        playAgainButton.alpha = 0
+
     }
 
     override func didReceiveMemoryWarning()
@@ -59,7 +61,6 @@ class ViewController: UIViewController
     override func viewDidAppear(animated: Bool)
     {
         label.center = CGPointMake(label.center.x - 400, label.center.y)
-        playAgainButton.alpha = 0
 
     }
     
