@@ -284,7 +284,9 @@ class ViewController: UIViewController
         gameState = [0, 0, 0, 0, 0, 0, 0, 0, 0]
         label.hidden = true
         playAgainButton.alpha = 0
-        
+
+        updateButtons()
+/*
         button0.setImage(nil, forState: UIControlState.Normal)
         button1.setImage(nil, forState: UIControlState.Normal)
         button2.setImage(nil, forState: UIControlState.Normal)
@@ -294,7 +296,7 @@ class ViewController: UIViewController
         button6.setImage(nil, forState: UIControlState.Normal)
         button7.setImage(nil, forState: UIControlState.Normal)
         button8.setImage(nil, forState: UIControlState.Normal)
-
+*/
     }
 }
     
