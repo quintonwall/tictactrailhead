@@ -28,11 +28,12 @@ class ViewController: UIViewController
     var winningCombinations = [[0,1,2], [3,4,5], [6,7,8], [0,3,6], [1,4,7], [2,5,8], [0,4,8], [2,4,6]]
     var winner = 0
     
+    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+    
 
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        PlayerTurnsLabel.font = UIFont.sdsFontLightWithSize(SDSFontSizeType.SDSFontSizeXLarge);
     }
 
     override func didReceiveMemoryWarning()
@@ -40,11 +41,24 @@ class ViewController: UIViewController
         super.didReceiveMemoryWarning()
     }
     
+    override func viewWillAppear(animated: Bool) {
+        NSLog("WILL APPEAR")
+        if appDelegate.sdsEnabled {
+            NSLog("SDS ON!")
+            label.font = UIFont.sdsFontLightWithSize(SDSFontSizeType.SDSFontSizeXxLarge);
+           PlayerTurnsLabel.font = UIFont.sdsFontLightWithSize(SDSFontSizeType.SDSFontSizeXLarge);
+        }
+        else{
+            NSLog("SDS OFF!")
+            label.font = UIFont.systemFontOfSize(24);
+            PlayerTurnsLabel.font = UIFont.systemFontOfSize(24);
+        }
+    }
+    
     override func viewDidAppear(animated: Bool)
     {
         label.center = CGPointMake(label.center.x - 400, label.center.y)
         playAgainButton.alpha = 0
-        label.font = UIFont.sdsFontLightWithSize(SDSFontSizeType.SDSFontSizeXxLarge);
 
     }
     
@@ -59,8 +73,12 @@ class ViewController: UIViewController
             
             if goNumber % 2 == 0
             {
-                //image = UIImage(named: "fire300.png")!
-                image = UIImage.sdsIconAction(SDSIconActionType.FreezeUser, withSize: 70)
+                if appDelegate.sdsEnabled {
+                    image = UIImage.sdsIconStandard(SDSIconStandardType.Approval, withSize: 70)
+                }
+                else{
+                    image = UIImage(named: "fire300.png")!
+                }
                 
                 
                 gameState[sender.tag] = 2
@@ -69,8 +87,12 @@ class ViewController: UIViewController
             }
             else
             {
-//                image = UIImage(named: "racoon-nocircle.png")!
-                image = UIImage.sdsIconAction(SDSIconActionType.ShareThanks, withSize: 70)
+                if appDelegate.sdsEnabled {
+                    image = UIImage.sdsIconCustom(SDSIconCustomType.Custom1, withSize: 70)
+                }
+                else{
+                    image = UIImage(named: "racoon-nocircle.png")!
+                }
                 gameState[sender.tag] = 1
                 PlayerTurnsLabel.text = "It's Fire's Turn"
                 

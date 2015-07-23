@@ -10,7 +10,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   SalesforceDesignSystem:
-    :commit: dc87326f5e1d4bdb687c95a0ddb4ec9642b4d25c
+    :commit: 6a56c840fd3715974cb606c3c24a7489797964b7
     :git: https://git.soma.salesforce.com/ux/SalesforceDesignSystem-iOS.git
 
 SPEC CHECKSUMS:
