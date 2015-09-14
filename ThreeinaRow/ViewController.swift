@@ -119,7 +119,7 @@ class ViewController: UIViewController
             {
                 someOneWon()
                 self.label.transform = CGAffineTransformMakeTranslation(-350, 0)
-                springWithDelay(0.9, delay: 0.2, animations: {
+                springWithDelay(0.9, 0.2, {
                     self.label.transform = CGAffineTransformMakeTranslation(0, 0)
                 })
 
@@ -143,7 +143,7 @@ class ViewController: UIViewController
                     self.playAgainButton.alpha = 1
                     
                     self.playAgainButton.transform = CGAffineTransformMakeTranslation(0, -450)
-                    springWithDelay(0.9, delay: 0.2, animations: {
+                    springWithDelay(0.9, 0.2, {
                         self.playAgainButton.transform = CGAffineTransformMakeTranslation(0, 0)
                     })
                 }
@@ -174,12 +174,8 @@ class ViewController: UIViewController
         let alertSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("chime_short_chord_up", ofType: "wav")!)
         print(alertSound)
         var error:NSError?
-        do {
-            audioPlayer = try AVAudioPlayer(contentsOfURL: alertSound)
-        } catch let error1 as NSError {
-            error = error1
-            //audioPlayer = nil
-        }
+        
+        audioPlayer = AVAudioPlayer(contentsOfURL: alertSound, error: &error)
         audioPlayer.prepareToPlay()
         audioPlayer.play()
 
@@ -192,12 +188,7 @@ class ViewController: UIViewController
         let alertSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("pop_drip", ofType: "wav")!)
         print(alertSound)
         var error:NSError?
-        do {
-            audioPlayer = try AVAudioPlayer(contentsOfURL: alertSound)
-        } catch let error1 as NSError {
-            error = error1
-            //audioPlayer = nil
-        }
+       audioPlayer = AVAudioPlayer(contentsOfURL: alertSound, error: &error)
         audioPlayer.prepareToPlay()
         audioPlayer.play()
         
@@ -208,12 +199,8 @@ class ViewController: UIViewController
         let alertSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("music_marimba_chord", ofType: "wav")!)
         print(alertSound)
         var error:NSError?
-        do {
-            audioPlayer = try AVAudioPlayer(contentsOfURL: alertSound)
-        } catch let error1 as NSError {
-            error = error1
-            //audioPlayer = nil
-        }
+       
+        audioPlayer = AVAudioPlayer(contentsOfURL: alertSound, error: &error)
         audioPlayer.prepareToPlay()
         audioPlayer.play()
         
@@ -225,12 +212,8 @@ class ViewController: UIViewController
         let alertSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("AndNow", ofType: "wav")!)
         print(alertSound)
         var error:NSError?
-        do {
-            audioPlayer = try AVAudioPlayer(contentsOfURL: alertSound)
-        } catch let error1 as NSError {
-            error = error1
-            //audioPlayer = nil
-        }
+        
+        audioPlayer = AVAudioPlayer(contentsOfURL: alertSound, error: &error)
         audioPlayer.prepareToPlay()
         audioPlayer.play()
         
