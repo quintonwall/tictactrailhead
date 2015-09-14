@@ -21,6 +21,7 @@
 		21E59FCB1A2A173100DE355B /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 21E59FC81A2A173100DE355B /* circle.png */; };
 		21E59FCD1A2A182E00DE355B /* SpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E59FCC1A2A182E00DE355B /* SpringAnimation.swift */; };
 		21E59FCF1A2A1CE600DE355B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E59FCE1A2A1CE600DE355B /* ViewController.swift */; };
+		84D062108A397444C7528A42 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB1BC47AE48142BCEB61FE38 /* libPods.a */; };
 		E7F1930C1B4C7C0500DD6F6D /* launch-sm.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F1930B1B4C7C0500DD6F6D /* launch-sm.png */; };
 		E7F1930E1B4C7C3D00DD6F6D /* splash-mtns.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F1930D1B4C7C3D00DD6F6D /* splash-mtns.png */; };
 		E7F193141B4C8B0800DD6F6D /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = E7F193131B4C8B0800DD6F6D /* title.png */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05529D101B601FE500F543B7 /* TicTacTrailhead-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TicTacTrailhead-Bridging-Header.h"; sourceTree = "<group>"; };
+		05529D111B601FE500F543B7 /* TicTacTrailheadTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TicTacTrailheadTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		216848C11A2A4AB40089D314 /* pop_drip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pop_drip.wav; sourceTree = "<group>"; };
 		216848C31A2A4B240089D314 /* music_marimba_chord.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = music_marimba_chord.wav; sourceTree = "<group>"; };
 		216848C51A2A4F010089D314 /* AndNow.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = AndNow.wav; sourceTree = "<group>"; };
@@ -57,6 +60,9 @@
 		21E59FC81A2A173100DE355B /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.png; sourceTree = "<group>"; };
 		21E59FCC1A2A182E00DE355B /* SpringAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringAnimation.swift; sourceTree = "<group>"; };
 		21E59FCE1A2A1CE600DE355B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2AF9A118321C5EB99570147C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		AB1BC47AE48142BCEB61FE38 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABFC3E88A618F90D7355F42D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E79ABDDF1B4DD7E700AB0C78 /* TTTBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TTTBridgingHeader.h; path = ThreeinaRow/TTTBridgingHeader.h; sourceTree = "<group>"; };
 		E7F1930B1B4C7C0500DD6F6D /* launch-sm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch-sm.png"; sourceTree = "<group>"; };
 		E7F1930D1B4C7C3D00DD6F6D /* splash-mtns.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splash-mtns.png"; sourceTree = "<group>"; };
@@ -70,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84D062108A397444C7528A42 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +90,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		199FF6855180D887B883EC39 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ABFC3E88A618F90D7355F42D /* Pods.debug.xcconfig */,
+				2AF9A118321C5EB99570147C /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		21E59F981A2A16DE00DE355B = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +106,8 @@
 				21E59FA31A2A16DE00DE355B /* TicTacTrailhead */,
 				21E59FB91A2A16DE00DE355B /* TicTacTrailhead */,
 				21E59FA21A2A16DE00DE355B /* Products */,
+				199FF6855180D887B883EC39 /* Pods */,
+				D9C901D9F2D40240DF0B8298 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,6 +142,8 @@
 				21E59FAF1A2A16DE00DE355B /* LaunchScreen.xib */,
 				21E59FA41A2A16DE00DE355B /* Supporting Files */,
 				E7F193171B4C92B600DD6F6D /* AboutViewController.swift */,
+				05529D101B601FE500F543B7 /* TicTacTrailhead-Bridging-Header.h */,
+				05529D111B601FE500F543B7 /* TicTacTrailheadTests-Bridging-Header.h */,
 			);
 			name = TicTacTrailhead;
 			path = ThreeinaRow;
@@ -155,6 +175,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D9C901D9F2D40240DF0B8298 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB1BC47AE48142BCEB61FE38 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -162,9 +190,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 21E59FC01A2A16DE00DE355B /* Build configuration list for PBXNativeTarget "TicTacTrailhead" */;
 			buildPhases = (
+				07C9D4C8653FE7529BD39443 /* Check Pods Manifest.lock */,
 				21E59F9D1A2A16DE00DE355B /* Sources */,
 				21E59F9E1A2A16DE00DE355B /* Frameworks */,
 				21E59F9F1A2A16DE00DE355B /* Resources */,
+				D87534417C59A47219AB3348 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -263,6 +293,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		07C9D4C8653FE7529BD39443 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D87534417C59A47219AB3348 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		21E59F9D1A2A16DE00DE355B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -348,7 +411,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -385,7 +448,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = ThreeinaRow/TTTBridgingHeader.h;
@@ -395,29 +458,40 @@
 		};
 		21E59FC11A2A16DE00DE355B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABFC3E88A618F90D7355F42D /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ThreeinaRow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gypsycode.TicTacTrailhead;
 				PRODUCT_NAME = TicTacTrailhead;
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "ThreeinaRow/TicTacTrailhead-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		21E59FC21A2A16DE00DE355B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AF9A118321C5EB99570147C /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ThreeinaRow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = gypsycode.TicTacTrailhead;
 				PRODUCT_NAME = TicTacTrailhead;
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "ThreeinaRow/TicTacTrailhead-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -425,6 +499,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -437,6 +512,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Mav.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = TicTacTrailhead;
+				SWIFT_OBJC_BRIDGING_HEADER = "ThreeinaRow/TicTacTrailheadTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TicTacTrailhead.app/TicTacTrailhead";
 			};
 			name = Debug;
@@ -445,6 +522,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -453,6 +531,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Mav.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = TicTacTrailhead;
+				SWIFT_OBJC_BRIDGING_HEADER = "ThreeinaRow/TicTacTrailheadTests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TicTacTrailhead.app/TicTacTrailhead";
 			};
 			name = Release;

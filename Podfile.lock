@@ -1,0 +1,19 @@
+PODS:
+  - SalesforceDesignSystem (0.1.0)
+
+DEPENDENCIES:
+  - SalesforceDesignSystem (from `https://github.com/salesforce-ux/SalesforceDesignSystem-iOS.git`)
+
+EXTERNAL SOURCES:
+  SalesforceDesignSystem:
+    :git: https://github.com/salesforce-ux/SalesforceDesignSystem-iOS.git
+
+CHECKOUT OPTIONS:
+  SalesforceDesignSystem:
+    :commit: 6a56c840fd3715974cb606c3c24a7489797964b7
+    :git: https://github.com/salesforce-ux/SalesforceDesignSystem-iOS.git
+
+SPEC CHECKSUMS:
+  SalesforceDesignSystem: c3e375a4fcc81acff29ebfc1f99b32d4a9d6e94b
+
+COCOAPODS: 0.38.2

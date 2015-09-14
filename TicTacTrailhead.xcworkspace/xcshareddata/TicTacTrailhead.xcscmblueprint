@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "BA7C2AAF8EE4158690185C9FC66407BFFA8AF968",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "510963EE1A7C587198B97CB5B4C3CCDF0EDA2083" : 0,
+    "BA7C2AAF8EE4158690185C9FC66407BFFA8AF968" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A175EBDB-F077-4149-BF3E-68E1B11A4269",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "510963EE1A7C587198B97CB5B4C3CCDF0EDA2083" : "SalesforceDesignSystem-iOS\/",
+    "BA7C2AAF8EE4158690185C9FC66407BFFA8AF968" : "tictactrailhead\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TicTacTrailhead",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 203,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "TicTacTrailhead.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/git.soma.salesforce.com\/ux\/SalesforceDesignSystem-iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "510963EE1A7C587198B97CB5B4C3CCDF0EDA2083"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/quintonwall\/tictactrailhead.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BA7C2AAF8EE4158690185C9FC66407BFFA8AF968"
+    }
+  ]
+}

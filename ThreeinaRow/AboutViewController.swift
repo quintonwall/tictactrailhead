@@ -19,7 +19,15 @@ class AboutViewController: UIViewController {
 
     }
     
+    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     
     @IBAction func sdsSwitchTapped(sender: AnyObject) {
+        NSLog("yes")
+        appDelegate.sdsEnabled = sdsSwitch.on
+        self.dismissViewControllerAnimated(true, completion: {})
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        self.sdsSwitch.setOn(appDelegate.sdsEnabled, animated: false)
     }
 }
