@@ -170,7 +170,6 @@ class ViewController: UIViewController
     func startNew() {
         
         let alertSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("chime_short_chord_up", ofType: "wav")!)
-        print(alertSound)
         var error:NSError?
         
         audioPlayer = AVAudioPlayer(contentsOfURL: alertSound, error: &error)
@@ -184,7 +183,6 @@ class ViewController: UIViewController
     func popDrop() {
         
         let alertSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("pop_drip", ofType: "wav")!)
-        print(alertSound)
         var error:NSError?
        audioPlayer = AVAudioPlayer(contentsOfURL: alertSound, error: &error)
         audioPlayer.prepareToPlay()
@@ -195,7 +193,6 @@ class ViewController: UIViewController
     func someOneWon() {
         
         let alertSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("music_marimba_chord", ofType: "wav")!)
-        print(alertSound)
         var error:NSError?
        
         audioPlayer = AVAudioPlayer(contentsOfURL: alertSound, error: &error)
@@ -208,7 +205,6 @@ class ViewController: UIViewController
     func NoOneWon() {
         
         let alertSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("AndNow", ofType: "wav")!)
-        print(alertSound)
         var error:NSError?
         
         audioPlayer = AVAudioPlayer(contentsOfURL: alertSound, error: &error)
@@ -268,17 +264,7 @@ class ViewController: UIViewController
         playAgainButton.alpha = 0
 
         updateButtons()
-/*
-        button0.setImage(nil, forState: UIControlState.Normal)
-        button1.setImage(nil, forState: UIControlState.Normal)
-        button2.setImage(nil, forState: UIControlState.Normal)
-        button3.setImage(nil, forState: UIControlState.Normal)
-        button4.setImage(nil, forState: UIControlState.Normal)
-        button5.setImage(nil, forState: UIControlState.Normal)
-        button6.setImage(nil, forState: UIControlState.Normal)
-        button7.setImage(nil, forState: UIControlState.Normal)
-        button8.setImage(nil, forState: UIControlState.Normal)
-*/
+
     }
 }
     
